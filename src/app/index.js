@@ -14,7 +14,6 @@ const modalLightboxGallery = new SimpleLightbox('.gallery a', {
 });
 
 spinnerPlay();
-
 window.addEventListener('load', () => {
   console.log('All resources loaded!');
   spinnerStop();
@@ -62,7 +61,6 @@ const loadMorePhotos = async function (entries, observer) {
 };
 
 const observer = new IntersectionObserver(loadMorePhotos, options);
-
 const onSubmitClick = async event => {
   event.preventDefault();
   const {
